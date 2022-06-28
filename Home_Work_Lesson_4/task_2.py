@@ -7,8 +7,8 @@
 Результат: [12, 44, 4, 10, 78, 123].
 """
 
-lst = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
-new_lst = list(enumerate(lst))
-res_lst = [x for n, x in new_lst if
-           n > 0 and new_lst[n][1] > new_lst[n - 1][1]]
-print(res_lst)
+my_list = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
+print(my_list)
+new_list = [my_list[el] for el in range(1, len(my_list)) if
+            my_list[el] > my_list[el - 1]]
+print(new_list)

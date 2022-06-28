@@ -7,9 +7,9 @@
 from sys import argv
 
 try:
-    script_name, hours, paymentPerHour, bonus = argv
+    script_name, hours, rate, bonus = argv
     print(f"Заработная плата сотрудника: ",
-          (int(hours) * int(paymentPerHour)) + int(bonus))
+          int(hours) * int(rate) + int(bonus))
 except ValueError:
     print("Должны быть введены 3 числа через пробел в конфигураторе"
           " \n1. Выработка в часах \n2. Ставка в час \n3. Премия")
