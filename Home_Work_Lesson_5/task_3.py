@@ -10,11 +10,11 @@
 """
 with open("task_3.txt", "r", encoding="utf-8") as f_obj:
     i = 0
-    summa = 0
+    summ = 0
     for el in f_obj:
         content = el.split()
-        summa += float(content[1])
+        summ += float(content[1])
         i += 1
         if float(content[1]) < 20000:
             print(f"Сотрудник {content[0]} имеет оклад меньше 20 000")
-    print(f"Средняя зарплата сотрудников {round((summa / i), 1)}")
+    print(f"Средняя зарплата сотрудников {round((summ / i), 1)}")

@@ -14,11 +14,11 @@ with open("task_6.txt", "r", encoding="utf-8") as f_obj:
     my_dict = {}
     for el in f_obj:
         content = el.split()
-        summa = 0
+        summ = 0
         for k in content:
             if k != '-':
                 tmp_num = k.split("(")
                 if len(tmp_num) == 2:
-                    summa += int(tmp_num[0])
-        my_dict.update({content[0].replace(':', ''): summa})
+                    summ += int(tmp_num[0])
+        my_dict.update({content[0].replace(':', ''): summ})
     print(my_dict)
